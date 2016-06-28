@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="movieTixApp">
+<head>
+	<title>Movie Tix - Book Movie Tickets Online</title>
+	<!-- stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+</head>
+
+<body ng-controller="movieController" class="container">
+
+	<!-- header -->
+
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Movie Tix</a>
+			</div>
+		<!--/.navbar-collapse -->
+		</div>
+	</div>
+	 
+	<div ng-view=""></div>
+
+	<!-- javascript -->
+	<!-- angular source  -->
+	<script type="text/javascript" src="js/lib/angular.min.js"></script>
+	<script type="text/javascript" src="js/lib/angular-resource.js"></script>
+	<script type="text/javascript" src="js/lib/angular-route.js"></script>
+	<!-- jquery -->
+	<script type="text/javascript" src="js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+
+
+	<!-- movietix app -->
+	<script type="text/javascript" src="js/controller/app.js"></script>
+	<script type="text/javascript" src="js/service/services.js"></script>
+	<script type="text/javascript" src="js/router/router.js"></script>
+</body>
+</html>
